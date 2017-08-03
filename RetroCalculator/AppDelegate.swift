@@ -6,8 +6,6 @@
 //  Copyright © 2017 Emmanouil Perakis. All rights reserved.
 //
 
-//test test test llanu
-
 import UIKit
 
 @UIApplicationMain
