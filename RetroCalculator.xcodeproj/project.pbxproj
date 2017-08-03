@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DF827C2D1F14164C008212ED /* Minecraft.ttf in Resources */ = {isa = PBXBuildFile; fileRef = DF827C2C1F14164C008212ED /* Minecraft.ttf */; };
+		DF827C2F1F141762008212ED /* btn.wav in Resources */ = {isa = PBXBuildFile; fileRef = DF827C2E1F141762008212ED /* btn.wav */; };
+		DF8B80231F16671200FABFC9 /* StartScreenVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF8B80221F16671200FABFC9 /* StartScreenVC.swift */; };
 		DF9FAD551F13BCC2009118D1 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FAD541F13BCC2009118D1 /* AppDelegate.swift */; };
 		DF9FAD571F13BCC2009118D1 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF9FAD561F13BCC2009118D1 /* ViewController.swift */; };
 		DF9FAD5A1F13BCC2009118D1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DF9FAD581F13BCC2009118D1 /* Main.storyboard */; };
@@ -15,6 +18,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DF827C2C1F14164C008212ED /* Minecraft.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Minecraft.ttf; sourceTree = "<group>"; };
+		DF827C2E1F141762008212ED /* btn.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = btn.wav; sourceTree = "<group>"; };
+		DF8B80221F16671200FABFC9 /* StartScreenVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StartScreenVC.swift; sourceTree = "<group>"; };
 		DF9FAD511F13BCC2009118D1 /* RetroCalculator.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RetroCalculator.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DF9FAD541F13BCC2009118D1 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		DF9FAD561F13BCC2009118D1 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -54,7 +60,10 @@
 		DF9FAD531F13BCC2009118D1 /* RetroCalculator */ = {
 			isa = PBXGroup;
 			children = (
+				DF827C2E1F141762008212ED /* btn.wav */,
+				DF827C2C1F14164C008212ED /* Minecraft.ttf */,
 				DF9FAD541F13BCC2009118D1 /* AppDelegate.swift */,
+				DF8B80221F16671200FABFC9 /* StartScreenVC.swift */,
 				DF9FAD561F13BCC2009118D1 /* ViewController.swift */,
 				DF9FAD581F13BCC2009118D1 /* Main.storyboard */,
 				DF9FAD5B1F13BCC2009118D1 /* Assets.xcassets */,
@@ -124,8 +133,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				DF827C2F1F141762008212ED /* btn.wav in Resources */,
 				DF9FAD5F1F13BCC2009118D1 /* LaunchScreen.storyboard in Resources */,
 				DF9FAD5C1F13BCC2009118D1 /* Assets.xcassets in Resources */,
+				DF827C2D1F14164C008212ED /* Minecraft.ttf in Resources */,
 				DF9FAD5A1F13BCC2009118D1 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,6 +149,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DF9FAD571F13BCC2009118D1 /* ViewController.swift in Sources */,
+				DF8B80231F16671200FABFC9 /* StartScreenVC.swift in Sources */,
 				DF9FAD551F13BCC2009118D1 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -263,11 +275,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RHFU8CABJ7;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmper.RetroCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideloadRetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Debug;
@@ -276,11 +291,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = RHFU8CABJ7;
 				INFOPLIST_FILE = RetroCalculator/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.emmper.RetroCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.sideloadRetroCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 3.0;
 			};
 			name = Release;
@@ -304,6 +322,7 @@
 				DF9FAD651F13BCC2009118D1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
